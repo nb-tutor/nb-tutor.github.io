@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# TYPOGRAPHY
+# BASIC FRAMEWORK
+# Main Page
+	## Header
+
+/*
+	# TYPOGRAPHY
+*/
+html {
+	box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Fira Sans', sans-serif;
+	clear: both;
+	line-height: 1.3em;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.4em; }
+
+body{
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color:  #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	body{
+		font-size: 14px;
+	}
+}
+
+/*
+	# BASIC FRAMEWORK
+*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-margin-1 {margin-right: 8.33%;}
+.col-margin-2 {margin-right: 16.66%;}
+.col-margin-3 {margin-right: 25%;}
+.col-margin-4 {margin-right: 33.33%;}
+.col-margin-5 {margin-right: 41.66%;}
+.col-margin-6 {margin-right: 50%;}
+.col-margin-7 {margin-right: 58.33%;}
+.col-margin-8 {margin-right: 66.66%;}
+.col-margin-9 {margin-right: 75%;}
+.col-margin-10 {margin-right: 83.33%;}
+.col-margin-11 {margin-right: 91.66%;}
+.col-margin-12 {margin-right: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.main-page-section::after, .row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+@media only screen and (max-width: 700px) {
+	[class*="col-"] {
+	    float: none;
+	    width: 100%;
+	    display: block;
+	    padding: 15px;
+	    box-sizing: border-box;
+	}
+}
+
+/*
+	# Main page
+*/
+
+.main-page-section{
+	padding: 0.5em;
+}
+
+.section-header {
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    font-size:	2.4em;
+}
+
+.section-intro{
+	font-size: 2em;
+	font-weight: 700;
+}
+
+/*  
+	## Header 
+*/
+
+#main-header{
+	background-color: #1E4391;
+	color: #fff;
+	text-align: center;
+}
+
+.hero{
+	font-size: 3.9em;
+	text-transform: uppercase;
+}
+.hero-description{
+	font-size: 2em;
+}
+
+/*
+	## What is nb tutor
+*/
+
+#what-is-nbtutor{
+	background-color: #dddddd;
+	color: #B42121;
+}
+
+#the-greek-alphabet{
+	background-color: #fff;
+	color: #1E4391;
+}
+
+.flex-video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 55.5%;
+    position: relative;
+    transform: scale(1);
+    margin: 1em 0;
+}
+
+.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.greek-alphabet-benefits{
+	font-size: 1.5em;
+	color: #404040;
+	font-weight: 600;
+	list-style: none;
+}
+
+.greek-alphabet-benefit{
+	margin: 0.5em 0;
+}
+
+.greek-alphabet-benefit-sublist{
+	list-style: none;
+}
+
+#sign-up{
+	background-color: #3366CC;
+	color: #fff;
+}
+
+#sign-up input[type="text"], #sign-up input[type="email"] {
+    border: 2px solid #36c;
+    width: 100%;
+    padding: 0.4em 0 0.4em 0.5em;
+    font-size: 1.5em;
+    color: #36c;
+    box-sizing: border-box;
+}
+
+#sign-up input[type="submit"] {
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    background: #b42121;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 800;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+    box-sizing: border-box;
+}
+
+#sign-up  input[type="submit"]:hover {
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+	#sign-up input[type="submit"] {
+		width: 100%;
+	}
+}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+/*
+	# Miscelaneous
+*/
+
+.arrow-right {
+display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 5px 0 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #1E4391;
+    border-bottom: 10px solid transparent;
+}
